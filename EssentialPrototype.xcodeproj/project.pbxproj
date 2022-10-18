@@ -13,6 +13,7 @@
 		8E016B0028FEECEA00387C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E016AFF28FEECEA00387C60 /* Assets.xcassets */; };
 		8E016B0328FEECEA00387C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E016B0128FEECEA00387C60 /* LaunchScreen.storyboard */; };
 		8E9E8D5028FF0163004F21D3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E8D4F28FF0163004F21D3 /* FeedViewController.swift */; };
+		8E9E8D7428FF0DF0004F21D3 /* FeedImageVieModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E8D7328FF0DF0004F21D3 /* FeedImageVieModel+PrototypeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8E016B0228FEECEA00387C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E016B0428FEECEA00387C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E9E8D4F28FF0163004F21D3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8E9E8D7328FF0DF0004F21D3 /* FeedImageVieModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageVieModel+PrototypeData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8E016B0128FEECEA00387C60 /* LaunchScreen.storyboard */,
 				8E016B0428FEECEA00387C60 /* Info.plist */,
 				8E9E8D4F28FF0163004F21D3 /* FeedViewController.swift */,
+				8E9E8D7328FF0DF0004F21D3 /* FeedImageVieModel+PrototypeData.swift */,
 			);
 			path = EssentialPrototype;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				8E016AF728FEECE900387C60 /* AppDelegate.swift in Sources */,
 				8E9E8D5028FF0163004F21D3 /* FeedViewController.swift in Sources */,
 				8E016AF928FEECE900387C60 /* SceneDelegate.swift in Sources */,
+				8E9E8D7428FF0DF0004F21D3 /* FeedImageVieModel+PrototypeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
