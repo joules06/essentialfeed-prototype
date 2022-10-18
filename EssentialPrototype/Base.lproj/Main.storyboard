@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DRo-fr-IJf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lJT-db-5DU">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -7,17 +7,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--My Feed-->
         <scene sceneID="eSi-Mh-WfI">
             <objects>
-                <tableViewController id="ELy-KL-3XI" sceneMemberID="viewController">
+                <tableViewController id="ELy-KL-3XI" customClass="FeedViewController" customModule="EssentialPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SFe-8T-p8o">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="ZiY-CK-pXo">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Eog-y1-qFh">
+                            <rect key="frame" x="0.0" y="674" width="390" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="qsM-qr-joi">
-                                <rect key="frame" x="0.0" y="50" width="390" height="580"/>
+                                <rect key="frame" x="0.0" y="66" width="390" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qsM-qr-joi" id="Bnf-yV-cR9">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="580"/>
@@ -114,29 +124,29 @@ Description Description</string>
                             <outlet property="delegate" destination="ELy-KL-3XI" id="yqZ-sn-Abo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AwE-Ky-SuY"/>
+                    <navigationItem key="navigationItem" title="My Feed" id="AwE-Ky-SuY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgS-ys-DCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133.8461538461538" y="-281.51658767772511"/>
+            <point key="canvasLocation" x="3921.5384615384614" y="-281.51658767772511"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="zce-N6-pxL">
+        <scene sceneID="sJb-Fj-qyG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRo-fr-IJf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lJT-db-5DU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bew-dr-7gd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkb-Vo-Q5L">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ELy-KL-3XI" kind="relationship" relationship="rootViewController" id="7Xv-js-jqc"/>
+                        <segue destination="ELy-KL-3XI" kind="relationship" relationship="rootViewController" id="XcM-aZ-stK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uAv-Bi-ysP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zM4-zC-AAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204.61538461538461" y="-281.51658767772511"/>
+            <point key="canvasLocation" x="2992.3076923076924" y="-281.51658767772511"/>
         </scene>
     </scenes>
     <resources>
